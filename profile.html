@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlashPay | Speed your life</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queriesProfile.css" />
+
+    <script defer type="module" src="profile.mjs"></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="#" class="nav-logo">
+        <img src="imgs/Logo.png" />
+      </a>
+
+      <p class="welcome">
+        Welcome back to
+        <span class="logo-text">
+          F<span class="logo-small-text">lash</span>
+          <span class="pay">P<span class="logo-small-text">ay</span> </span>
+        </span>
+        , <span class="users-name"></span>
+      </p>
+
+      <button class="logout-btn">Log out</button>
+    </nav>
+
+    <main class="container">
+      <section class="section-balance">
+        <div>
+          <p class="balance-label">Current balance</p>
+          <p class="balance-date">
+            As of
+            <span class="date"></span>
+          </p>
+        </div>
+        <p>$<span class="balance-value">0000</span></p>
+      </section>
+
+      <section class="section-CTA">
+        <div class="movements">
+          <div class="movements-row">
+            <div class="movements-type movements-type-deposit">deposit</div>
+            <div class="movements-value"><span>$</span>4 000</div>
+          </div>
+          <div class="movements-row">
+            <div class="movements-type movements-type-withdrawal">
+              withdrawal
+            </div>
+
+            <div class="movements-value"><span>$</span> 378</div>
+          </div>
+        </div>
+
+        <div class="CTA-scale">
+          <form class="add-money CTA-containers">
+            <div class="CTA-text">
+              <h3>Deposit / Request loan</h3>
+              <div class="CTA-tabs-inputs">
+                <input
+                  type="number"
+                  placeholder="MIN $25"
+                  class="add-money-input CTA-info-tabs"
+                  required
+                />
+                <select class="add-money-select CTA-info-tabs" required>
+                  <option>Deposit</option>
+                  <option>Request loan</option>
+                </select>
+                <button class="submit-deposit-loan">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="tooltip">
+              <ion-icon name="help-circle-outline"></ion-icon>
+              <span class="tooltip-text">
+                <h4>Loan T&C</h4>
+
+                The total of your deposits must be at least 50% of the requested
+                amount</span
+              >
+            </div>
+          </form>
+        </div>
+
+        <div class="CTA-scale">
+          <form class="transfer CTA-containers">
+            <div class="CTA-text">
+              <h3>Transfer funds</h3>
+              <div class="CTA-tabs-inputs">
+                <input
+                  type="text"
+                  placeholder="username"
+                  class="transfer-input-un CTA-info-tabs"
+                  required
+                />
+                <input
+                  type="password"
+                  placeholder="Your PIN"
+                  class="transfer-input-pin CTA-info-tabs"
+                  required
+                />
+                <input
+                  type="number"
+                  placeholder="MIN $25"
+                  class="transfer-input-amount CTA-info-tabs"
+                  required
+                />
+
+                <button class="submit-transfer">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="tooltip">
+              <ion-icon name="help-circle-outline"></ion-icon>
+              <span class="tooltip-text">
+                <h4>Transfer to a friend</h4>
+
+                You need to enter their username, your PIN code and the desired
+                amount.</span
+              >
+            </div>
+          </form>
+        </div>
+
+        <div class="CTA-scale">
+          <form class="close-account CTA-containers">
+            <div class="CTA-text">
+              <h3>CLose account</h3>
+              <div class="CTA-tabs-inputs">
+                <input
+                  type="text"
+                  placeholder="username"
+                  class="close-account-input-un CTA-info-tabs"
+                  required
+                />
+                <input
+                  type="password"
+                  placeholder="PIN"
+                  class="close-account-input-pass CTA-info-tabs"
+                  required
+                />
+                <select class="close-account-select CTA-info-tabs" required>
+                  <option>Reason</option>
+                  <option>Technical issues</option>
+                  <option>Customer services</option>
+                  <option>Other</option>
+                </select>
+                <button class="submit-closure">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="tooltip">
+              <ion-icon name="help-circle-outline"></ion-icon>
+              <span class="tooltip-text">
+                <h4>Closing your account</h4>
+
+                To close your account, you must enter your username and
+                PIN.</span
+              >
+            </div>
+          </form>
+        </div>
+
+        <div class="CTA-scale">
+          <div class="upgrade CTA-containers">
+            <div>
+              <p class="upgrade-text updated-to-premium">5% cashback</p>
+              <button class="upgrade-to-premium">Upgrade to Premium</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-details">
+        <div>
+          <p class="details-type">In:</p>
+          <p class="details-amount details-amount-in">
+            <span class="dol-details">$</span>
+            <span class="amount-in">0000</span>
+          </p>
+          <p class="details-type">Out:</p>
+          <p class="details-amount details-amount-out">
+            <span class="dol-details">$</span>
+            <span class="amount-out">0000</span>
+          </p>
+          <p class="details-type">Cashback:</p>
+          <p class="details-amount details-amount-cb">
+            <span class="dol-details">$</span>
+            <span class="amount-cb">0000</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="#">
+          <img src="imgs/Logo.png" />
+        </a>
+        <div class="footer-socials">
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+        </div>
+
+        <p class="footer-copyright">
+          &copy; Copyright by
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/velislav-kostov-8a41731a1"
+            >Velislav Kostov</a
+          >.
+        </p>
+      </div>
+      <div class="footer-address">
+        <h5>Address</h5>
+        <a class="address" href="https://goo.gl/maps/3bBrHuSXg6pmeB2b7">
+          623 Harrison St., 2nd Floor,
+          <br />
+          San Francisco, CA 94107
+        </a>
+        <a class="phone-number" href="415-201-6370">415-201-6370</a>
+        <a class="email" href="mailto:hello@Lightbank.com">
+          hello@Lightbank.com</a
+        >
+      </div>
+      <div class="footer-ForYou">
+        <h5>For You</h5>
+        <ul class="footer-list">
+          <li><a>Pricing</a></li>
+          <li>
+            <a>Terms and Conditions</a>
+          </li>
+          <li>
+            <a>Legal documents</a>
+          </li>
+          <li>
+            <a>Security protocol</a>
+          </li>
+          <li><a>FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-AboutUs">
+        <h5>About us</h5>
+        <ul class="footer-list">
+          <li><a>About</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+
+    <div class="modal-pricing modal-hidden">
+      <div class="starter-plan-card">
+        <div class="starter-plan">
+          <img class="plan-photos" src="imgs/Pricing/pricing-start.PNG" />
+
+          <div class="cost">
+            $
+            <span class="full-cost"
+              ><span class="dollars-cost">14</span>.99</span
+            >
+            <br />
+            per month
+          </div>
+
+          <div class="plan-info">
+            <h3>Starter</h3>
+            <p>Plastic card</p>
+          </div>
+
+          <div class="starter-plan-pros">
+            <ul>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant trasnfers
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant loans
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant notifications
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Stock investments
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Unlimited exchange
+              </li>
+              <li>
+                <ion-icon name="close-outline" class="plan-icons"></ion-icon>
+              </li>
+            </ul>
+          </div>
+          <button class="start-now start-now-starter">START</button>
+        </div>
+      </div>
+
+      <div class="premium-plan-card">
+        <div class="premium-plan">
+          <img class="plan-photos" src="imgs/Pricing/pricing-premium.PNG" />
+
+          <div class="cost">
+            $
+            <span class="full-cost"
+              ><span class="dollars-cost">24</span>.99</span
+            >
+            <br />
+            per month
+          </div>
+
+          <div class="plan-info">
+            <h3>Premium</h3>
+            <p>Metal card</p>
+          </div>
+
+          <div class="premium-plan-pros">
+            <ul>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant trasnfers
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant loans
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Instant notifications
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Stock investments
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >Unlimited exchange
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+                >5% cashback up to $5K
+              </li>
+            </ul>
+          </div>
+          <button class="start-now start-now-premium">START</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-updated modal-hidden starter-welcome">
+      <h3>
+        <span class="users-name"></span>, you successfully updated your plan for
+
+        <span class="logo-text">
+          F<span class="logo-small-text">lash</span>
+          <span class="pay">P<span class="logo-small-text">ay</span> </span>
+        </span>
+      </h3>
+      <div class="access-to">
+        <p>With the <span class="starter">starter</span> plan you receive:</p>
+        <ul>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon>5%
+            Plastic card
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+            >Unlimited exchange
+          </li>
+        </ul>
+      </div>
+      <button class="finish-update modals-btns">Finish</button>
+    </div>
+
+    <div class="modal-updated modal-hidden premium-welcome">
+      <h3>
+        <span class="users-name"></span>, you successfully updated your plan for
+
+        <span class="logo-text">
+          F<span class="logo-small-text">lash</span>
+          <span class="pay">P<span class="logo-small-text">ay</span> </span>
+        </span>
+      </h3>
+      <div class="access-to">
+        <p>With <span class="premium">premium</span> you receive:</p>
+        <ul>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+            >Metal card
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+            >Unlimited exchange
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon>5%
+            cashback up to $5K
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline" class="plan-icons"></ion-icon
+            >24/7 VIP support
+          </li>
+        </ul>
+      </div>
+      <button class="finish-update modals-btns">Finish</button>
+    </div>
+
+    <div class="modal-chat modal-hidden">
+      <h3>
+        Welcome to
+
+        <span class="logo-text">
+          F<span class="logo-small-text">lash</span>
+          <span class="pay">P<span class="logo-small-text">ay</span> </span>
+        </span>
+        live chat
+      </h3>
+
+      <div class="chat-box">
+        <div class="chat-message">
+          <div class="site-message chat-hide site1">
+            <p class="site1">
+              Dear <span class="users-name"></span>, <br />Thank you for
+              contacting us. Please laeve your question and an active email.
+              <br />
+              Within the next 60 minutes, we will get back to you!
+            </p>
+            <img class="chat-logo" src="imgs/Logo.png" />
+          </div>
+          <div class="user-message chat-hide">
+            <p class="user"></p>
+            <img class="user-img" src="imgs/user-photo.png" />
+          </div>
+          <div class="site-message chat-hide site2">
+            <p>
+              We are thankful for your assistance. <br />
+              Please, allow us some time to review your query and send you an
+              official email.
+              <br />
+              Kindly note that the chat will be closed in
+              <span class="timer"></span> seconds
+            </p>
+            <img class="chat-logo" src="imgs/Logo.png" />
+          </div>
+        </div>
+        <div class="chat-input">
+          <textarea
+            class="user-input-msg"
+            placeholder="Type message.."
+            name="msg"
+            required
+          ></textarea>
+          <button type="submit" class="live-chat-btn">
+            <ion-icon name="send"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay modal-hidden"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

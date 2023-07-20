@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlashPay | Speed your life</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queriesIndex.css" />
+
+    <script defer type="module" src="script.mjs"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <button class="nav-logo">
+          <img src="imgs/Logo.png" />
+          <p class="logo-text">
+            F<span class="logo-small-text">lash</span
+            ><span class="pay">P<span class="logo-small-text">ay</span> </span>
+          </p>
+        </button>
+        <div class="nav-menu">
+          <ul class="nav-sections">
+            <li class="nav-items">
+              <a class="nav-links font" href="#section-features">Features</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-links font" href="#section-operations"
+                >Operations</a
+              >
+            </li>
+            <li class="nav-items">
+              <a class="nav-links font" href="#section-pricing">Pricing</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-links font" href="#section-testimonials">Reviews</a>
+            </li>
+          </ul>
+
+          <button class="login-btn">Log in</button>
+        </div>
+      </nav>
+      <div class="hero-section">
+        <div class="header-text">
+          <h1>Where the payments meet the speed</h1>
+          <p class="font">A simple banking for a faster life</p>
+
+          <button class="font learn-more">
+            Learn more<ion-icon name="chevron-down-outline"></ion-icon>
+          </button>
+
+          <div class="header-review">
+            <div class="header-people-imgs">
+              <img
+                src="imgs/Header/header-customer1.jpg"
+                alt="Customer photo"
+              />
+              <img
+                src="imgs/Header/header-customer2.jpg"
+                alt="Customer photo"
+              />
+              <img
+                src="imgs/Header/header-customer3.jpg"
+                alt="Customer photo"
+              />
+              <img
+                src="imgs/Header/header-customer4.jpg"
+                alt="Customer photo"
+              />
+              <img
+                src="imgs/Header/header-customer5.jpg"
+                alt="Customer photo"
+              />
+              <img
+                src="imgs/Header/header-customer6.jpg"
+                alt="Customer photo"
+              />
+            </div>
+            <p class="header-review-text">
+              <span>250,000+</span> already decided!
+            </p>
+          </div>
+        </div>
+        <div class="header-img">
+          <img class="header--img" src="imgs/Header/Landing-page.png" />
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="section-features"
+      class="section-features container section-hidden"
+    >
+      <div class="features-heading">
+        <h3 class="sections-header">
+          Everything you need in a modern bank and more.
+        </h3>
+      </div>
+      <div class="features-list">
+        <div class="features-img">
+          <img src="imgs/Features/features-1.png" />
+        </div>
+        <div class="features-text text1 font">
+          <ion-icon name="infinite-outline" class="features-icons"></ion-icon>
+          <h5>24/7 Access to your funds</h5>
+          <p>
+            One of the biggest advantages of online banking is that you can
+            access your account 24/7, wherever you are. As long as you have an
+            internet connection, you can log on and check your finances – so not
+            only can you do it while you’re on holiday or out shopping, but you
+            also won’t have to worry about bank opening times or leaving your
+            home when it’s not convenient.
+          </p>
+        </div>
+        <div class="features-text text2 font">
+          <ion-icon name="timer-outline" class="features-icons"></ion-icon>
+          <h5>Everything comes in seconds</h5>
+          <p>
+            With an online bank account, transferring money between accounts
+            couldn’t be simpler. This may be a particularly great benefit if you
+            have a savings account and find yourself frequently having to
+            transfer money between the two. All you’ll have to do is log on to
+            your banking and do it yourself, you don’t have to worry about going
+            in branch or phoning someone.
+          </p>
+        </div>
+        <div class="features-img">
+          <img src="imgs/Features/features-2.png" />
+        </div>
+        <div class="features-img">
+          <img src="imgs/Features/features-3.png" />
+        </div>
+        <div class="features-text text3 font">
+          <ion-icon name="leaf-outline" class="features-icons"></ion-icon>
+          <h5>Environmental friendly</h5>
+          <p>
+            Banking from home online or on a smartphone isn’t just convenient,
+            it helps the environment by eliminating car trips to the bank,
+            reducing carbon monoxide emissions and the resulting pollution. A
+            debit card and secure PIN (personal identification number) is
+            usually all you’ll need to set up online and/or mobile banking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-operations"
+      class="section-operations container section-hidden"
+    >
+      <div class="operations-heading">
+        <h3 class="sections-header">All you need is here and more.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations-tab-container">
+          <button class="operations-tab tab-1 operation-active" data-tab="1">
+            Instant <br />
+            Transfers
+          </button>
+          <button class="operations-tab tab-2" data-tab="2">
+            Instant <br />
+            Loans
+          </button>
+          <button class="operations-tab tab-3" data-tab="3">
+            Instant <br />
+            Notification
+          </button>
+        </div>
+        <div class="operations-text">
+          <div class="operation-description operation-description-1">
+            <div class="operations-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                />
+              </svg>
+            </div>
+            <div class="operations-info">
+              <h5>Waiting is boring, transfer instantly!</h5>
+              <p>
+                Send money the way that suits you – using bank cards & accounts,
+                or simply using a mobile number. Transfers are processed within
+                seconds. All money transfers are certified by Visa, Mastercard
+                (...) and are PCI DSS certified.
+              </p>
+            </div>
+          </div>
+          <div class="operation-description hidden-all operation-description-2">
+            <div class="operations-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                />
+              </svg>
+            </div>
+            <div class="operations-info">
+              <h5>Always be prepared!</h5>
+              <p>
+                We provide instant customer loans available for customers all
+                over the world via the FlashPay app. 100% online process and
+                quick credit decision. Limited fees and flexible payment
+                scheduals too!
+              </p>
+            </div>
+          </div>
+          <div class="operation-description hidden-all operation-description-3">
+            <div class="operations-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+                />
+              </svg>
+            </div>
+            <div class="operations-info">
+              <h5>Keep your funds safe and on track!</h5>
+              <p>
+                Get a push notification whenever there’s a payment-related
+                activity on your account. With instant notifications, you can be
+                100% sure all the money leaving your account is legit – and you
+                haven’t been overcharged.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-pricing"
+      class="section-pricing container section-hidden"
+    >
+      <div class="pricing-heading">
+        <h3 class="sections-header">Choose happiness - update to Premuium</h3>
+      </div>
+      <div class="pricing-cards">
+        <div class="free-plan-card">
+          <div class="free-plan">
+            <img
+              class="plan-photos plan-photos-hovered"
+              src="imgs/Pricing/pricing-free.png"
+            />
+
+            <div class="cost">
+              $
+              <span class="full-cost"
+                ><span class="dollars-cost">00</span>.00</span
+              >
+              <br />
+              for life
+            </div>
+
+            <div class="plan-info">
+              <h3>Free</h3>
+              <p>Virtual card</p>
+            </div>
+
+            <div class="free-plan-pros">
+              <ul>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant trasnfers
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant loans
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant notifications
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Stock investments
+                </li>
+                <li>
+                  <ion-icon name="close-outline" class="plan-icons"></ion-icon>
+                </li>
+                <li>
+                  <ion-icon name="close-outline" class="plan-icons"></ion-icon>
+                </li>
+              </ul>
+            </div>
+            <button class="start-now">START</button>
+          </div>
+        </div>
+
+        <div class="starter-plan-card">
+          <div class="starter-plan">
+            <img class="plan-photos" src="imgs/Pricing/pricing-start.PNG" />
+
+            <div class="cost">
+              $
+              <span class="full-cost"
+                ><span class="dollars-cost">14</span>.99</span
+              >
+              <br />
+              per month
+            </div>
+
+            <div class="plan-info">
+              <h3>Starter</h3>
+              <p>Plastic card</p>
+            </div>
+
+            <div class="starter-plan-pros">
+              <ul>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant trasnfers
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant loans
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant notifications
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Stock investments
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Unlimited exchange
+                </li>
+                <li>
+                  <ion-icon name="close-outline" class="plan-icons"></ion-icon>
+                </li>
+              </ul>
+            </div>
+            <button class="start-now">START</button>
+          </div>
+        </div>
+
+        <div class="premium-plan-card">
+          <div class="premium-plan">
+            <img class="plan-photos" src="imgs/Pricing/pricing-premium.PNG" />
+
+            <div class="cost">
+              $
+              <span class="full-cost"
+                ><span class="dollars-cost">24</span>.99</span
+              >
+              <br />
+              per month
+            </div>
+
+            <div class="plan-info">
+              <h3>Premium</h3>
+              <p>Metal card</p>
+            </div>
+
+            <div class="premium-plan-pros">
+              <ul>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant trasnfers
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant loans
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Instant notifications
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Stock investments
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >Unlimited exchange
+                </li>
+                <li>
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="plan-icons"
+                  ></ion-icon
+                  >5% cashback up to $5k
+                </li>
+              </ul>
+            </div>
+            <button class="start-now">START</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-testimonials"
+      class="section-testimonial container section-hidden"
+    >
+      <div class="testimonial-heading">
+        <h3 class="testimonial-header sections-header">
+          Millions of Bankists already made their lifes simpler.
+        </h3>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="stars">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <div class="review-text review-text-1">
+            <h3>Best bank ever.</h3>
+            <p>
+              Ive been using flashpay for a couple of years. Im now having the
+              metal plan and use it as my main card. Never ever had any bigger
+              issues with FlashPay. If I have a question or anything, The
+              customer support helps me in a few min. I have much more issues
+              with my "ordinary" bank and I pay more in fees to them than to
+              flashpay.
+            </p>
+            <p class="review-author">~ John Whitehall | NYC ~</p>
+          </div>
+          <div class="review-text review-text-2">
+            <h3>Simplicity Itself</h3>
+            <p>
+              The card is just so easy to use. Transfer in / transfer our, make
+              payments it's all just very simple and intuitive. Support is
+              available if you need it and extremely professional when
+              contacted. I've been a customer since the beginning, and wouldn't
+              use anything else.
+            </p>
+            <p class="review-author">~ Marie Josephe | France ~</p>
+          </div>
+          <div class="review-text review-text-3">
+            <h3>FlashPay does what it promises you.</h3>
+            <p>
+              FlashPay does what it promises you. It allows you set up an
+              account in a simple and logical manner. There are no duplication
+              of information requests issued. The FlashPay account is very easy
+              to manage after it is set up.
+            </p>
+            <p class="review-author">~ Hans Niemann | Germany ~</p>
+          </div>
+          <div class="review-text review-text-4 review-active">
+            <h3>Best exchange rate yet</h3>
+            <p>
+              FlashPay has one on the best exchange rates over all the other
+              companies and this is why we love it so much, now all our family
+              have FlashPay accounts. We also love it because it is safe to use,
+              I was scammed in Gibraltar on my bank card but first of all I used
+              my Revolut card and it declined so FlashPay must have known
+              something my bank didn’t. A+++++ for us 😊😊.
+            </p>
+            <p class="review-author">~ Valeria Dimitrova ~</p>
+          </div>
+          <div class="review-text review-text-5">
+            <h3>Rock solid.</h3>
+            <p>
+              Our relationship was a bit rocky to begin with, once I got the
+              email address sorted out it was plain sailing. It was really
+              simple to set up and I look forward to using the card on my next
+              holiday.
+            </p>
+            <p class="review-author">~ Fabiola Perez ~</p>
+          </div>
+        </div>
+        <div class="testimonial-imgs">
+          <button class="review-people testimonial-img-active" data-slide="1">
+            <img src="imgs/testimonials/1.jpg" alt="Customer photo" />
+          </button>
+          <button class="review-people" data-slide="2">
+            <img src="imgs/testimonials/2.jpg" alt="Customer photo" />
+          </button>
+          <button class="review-people" data-slide="3">
+            <img src="imgs/testimonials/3.jpg" alt="Customer photo" />
+          </button>
+          <button class="review-people" data-slide="4">
+            <img src="imgs/testimonials/4.jpg" alt="Customer photo" />
+          </button>
+          <button class="review-people" data-slide="5">
+            <img src="imgs/testimonials/5.jpg" alt="Customer photo" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-in container">
+      <div class="sign-in-header">
+        <h3>The best day to join FlashPay was one year ago.</h3>
+        <h3>The second best is today!</h3>
+      </div>
+      <button class="sign-in-btn">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <button class="footer-logo">
+          <img src="imgs/Logo.png" />
+        </button>
+        <div class="footer-socials">
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+        </div>
+
+        <p class="footer-copyright">
+          &copy; Copyright by
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/velislav-kostov-8a41731a1"
+            >Velislav Kostov</a
+          >.
+        </p>
+      </div>
+      <div class="footer-address">
+        <h5>Address</h5>
+        <a class="address" href="https://goo.gl/maps/3bBrHuSXg6pmeB2b7">
+          623 Harrison St., 2nd Floor, <br />
+          San Francisco, CA 94107
+        </a>
+        <a class="phone-number" href="415-201-6370">415-201-6370</a>
+        <a class="email" href="mailto:hello@Lightbank.com">
+          hello@Lightbank.com</a
+        >
+      </div>
+      <div class="footer-ForYou">
+        <h5>For You</h5>
+        <ul class="footer-list">
+          <li><a>Pricing</a></li>
+          <li><a>Terms and Conditions</a></li>
+          <li><a>Legal documents</a></li>
+          <li><a>Security protocol</a></li>
+          <li><a>FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-AboutUs">
+        <h5>About us</h5>
+        <ul class="footer-list">
+          <li><a>About</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="modal-window">
+      <div class="modal-login modal-hidden modal">
+        <button class="close-modal">
+          <ion-icon name="close"></ion-icon>
+        </button>
+        <h3 class="modal-header">
+          Welcome back to
+          <span class="logo-text">
+            F<span class="logo-small-text">lash</span
+            ><span class="pay">P<span class="logo-small-text">ay</span> </span>
+          </span>
+        </h3>
+        <form class="form-login">
+          <label>Username</label>
+          <input class="username-input" type="text" required />
+          <label>Password</label>
+          <input class="password-input" type="password" required />
+          <button class="btn-login-form modals-btns">Continue</button>
+        </form>
+        <div class="login-registration">
+          <h5>Don't have an account?</h5>
+          <button class="btn-account-not modals-btns">Sign up</button>
+        </div>
+      </div>
+
+      <div class="modal-signup modal-hidden modal">
+        <button class="close-modal">
+          <ion-icon name="close"></ion-icon>
+        </button>
+        <h3 class="modal-header">
+          Join
+          <span class="logo-text">
+            F<span class="logo-small-text">lash</span
+            ><span class="pay">P<span class="logo-small-text">ay</span> </span>
+          </span>
+          <br />
+          in just 5 minutes
+        </h3>
+        <form class="form-signup">
+          <label>First Name</label>
+          <input
+            type="text"
+            placeholder="James"
+            class="signup-inputs"
+            required
+          />
+          <label>Last Name</label>
+          <input
+            type="text"
+            placeholder="Martin"
+            class="signup-inputs"
+            required
+          />
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="me@example.com"
+            class="signup-inputs"
+            required
+          />
+          <label>Date of birth</label>
+          <input type="date" class="signup-inputs" required />/
+          <button type="submit" class="modal-continue modals-btns">
+            Continue
+          </button>
+        </form>
+
+        <div class="login-registration">
+          <h5>Already have an account?</h5>
+          <button class="btn-account-yes modals-btns">Log in</button>
+        </div>
+      </div>
+
+      <div class="modal-signup2 modal modal-hidden">
+        <button class="close-modal">
+          <ion-icon name="close"></ion-icon>
+        </button>
+        <h3 class="modal-header">
+          Continue your registration with
+          <span class="logo-text">
+            F<span class="logo-small-text">lash</span
+            ><span class="pay">P<span class="logo-small-text">ay</span> </span>
+          </span>
+        </h3>
+        <form class="form-signup2">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            placeholder="123-45-678"
+            class="signup-inputs"
+            required
+          />
+          <label>Address</label>
+          <input
+            type="text"
+            placeholder="City / Street / No"
+            class="signup-inputs"
+            required
+          />
+          <label for="select-where">Where did you hear about us?</label>
+          <select id="select-where" name="select-where" required>
+            <option value="">Please select:</option>
+            <option value="friends">Friends and family</option>
+            <option value="youtube">YouTube video</option>
+            <option value="podcast">Podcast</option>
+            <option value="ad">Facebook ad</option>
+            <option value="others">Others</option>
+          </select>
+          <button type="submit" class="modals-btns">Continue</button>
+        </form>
+      </div>
+
+      <div class="modal-signup3 modal modal-hidden">
+        <button class="close-modal">
+          <ion-icon name="close"></ion-icon>
+        </button>
+        <h3 class="modal-header">
+          You sucessfully completed your registration with
+          <span class="logo-text">
+            F<span class="logo-small-text">lash</span
+            ><span class="pay">P<span class="logo-small-text">ay</span> </span>
+          </span>
+        </h3>
+        <p>
+          We will now review your account details and get back to you with an
+          official email within the next 24 hours!
+        </p>
+        <button class="finish-signup modals-btns">Finish</button>
+
+        <img src="imgs/modal-email.png" alt="" />
+      </div>
+    </div>
+    <div class="overlay modal-hidden"></div>
+
+    <!-- ICONPACK -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- <script src="profile.js"></script> -->
+  </body>
+</html>

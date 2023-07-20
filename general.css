@@ -1,0 +1,384 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 /
+ 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 /
+ 96 / 128
+
+Main color: #4B006E
+Shades:
+#260037
+
+Tints:
+#ede6f1
+#9366a8
+*/
+
+/**************************
+GENERAL CODE
+**************************/
+
+.sections-header {
+  margin-left: 12rem;
+  font-size: 4rem;
+  color: var(--header--color);
+}
+
+/**************************
+HEADER
+**************************/
+
+.nav-bar {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.8rem;
+  width: 100%;
+}
+
+button.nav-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--brand--color);
+  font-size: 3rem;
+}
+
+.pay {
+  color: rgb(114, 91, 164);
+}
+
+.logo-small-text {
+  font-size: 2.4rem;
+}
+
+.nav-logo img {
+  width: 12.8rem;
+}
+
+.login-btn,
+.logout-btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  width: 12.8rem;
+
+  color: var(--header--color);
+  background-color: var(--nav--links);
+  border: none;
+  border-radius: 11px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  color: var(--background--full);
+  background-color: var(--CTA--);
+}
+
+/**************************
+PRICING
+**************************/
+
+.pricing-heading {
+  grid-column: 1/-1;
+  position: relative;
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+  overflow: hidden;
+  height: 9.6rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.pricing-heading::before {
+  content: "Pricing";
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--brand--color);
+  color: var(--background--full);
+  padding: 0.1rem 0.1rem;
+  width: 12.8rem;
+  text-align: center;
+}
+.pricing-cards {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-around;
+  padding: 3rem;
+  /* padding: 1rem; */
+}
+
+.free-plan-card,
+.starter-plan-card {
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.plan-photos {
+  border-radius: 11px 11px 0 0;
+  transition: all 0.2s;
+}
+
+.cost {
+  position: absolute;
+  top: 12rem;
+  left: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Poppins";
+  line-height: 0.9;
+  color: #fff;
+}
+
+span.dollars-cost {
+  font-size: 4.4rem;
+}
+
+span.full-cost {
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.free-plan,
+.starter-plan,
+.premium-plan {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.premium-plan-card {
+  background-color: var(--premium--);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.premium-plan {
+  color: #fff;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.plan-info h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.plan-info p {
+  font-size: 1.8rem;
+}
+
+.plan-pros {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.free-plan-pros,
+.starter-plan-pros,
+.premium-plan-pros {
+  padding: 2rem;
+}
+
+.free-plan-pros ul,
+.starter-plan-pros ul,
+.premium-plan-pros ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+.plan-icons {
+  margin-right: 1rem;
+  transform: translateY(25%);
+}
+
+.start-now {
+  width: 70%;
+  align-self: center;
+  padding: 2rem;
+  border: none;
+  background-color: var(--CTA--);
+  color: var(--background--full);
+  border-radius: 11px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.start-now:hover,
+.start-now:active,
+.start-now-premium:hover,
+.start-now-premium:active {
+  background-color: var(--background--full);
+  color: var(--text--color);
+}
+
+/**************************
+FOOTER
+**************************/
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 7rem 5rem;
+  justify-content: end;
+}
+
+.footer h5 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: rgba(17, 17, 17, 0.8);
+  margin-left: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer-logo {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-logo img {
+  width: 11rem;
+  transition: all 0.3s;
+  margin-bottom: 4rem;
+}
+
+.footer-socials,
+.footer-socials a {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.8rem;
+  /* gap: 1rem; */
+  font-size: 1.4rem;
+}
+.address {
+  margin-bottom: 2rem;
+}
+.footer-address a:link,
+.footer-address a:visited {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.footer-address a:hover,
+.footer-address a:active {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.footer-list a:hover,
+.footer-list a:active {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+/**************************
+FOOTER
+**************************/
+
+.modal-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hidden-all {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modals-btns {
+  border: none;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--background--full);
+  box-shadow: 0 0 0 0.2rem #492c8a80 inset;
+  color: var(--CTA--);
+  padding: 1.5rem;
+  border-radius: 1.9rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.modals-btns:hover {
+  background-color: var(--CTA--);
+  color: var(--background--full);
+}

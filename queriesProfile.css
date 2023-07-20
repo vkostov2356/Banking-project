@@ -1,0 +1,265 @@
+/**************************/
+/* BELOW 1264px  */
+/**************************/
+
+@media (max-width: 79em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    margin: 5rem 4rem 15rem 4rem;
+  }
+  .movements {
+    max-height: 76rem;
+  }
+
+  .details-amount {
+    margin-right: 0;
+  }
+
+  .details-type {
+    font-size: 1.4rem;
+  }
+
+  .CTA-info-tabs {
+    padding: 0.5rem;
+  }
+
+  .CTA-containers {
+    padding: 2rem;
+    /* align-items: center; */
+  }
+
+  .CTA-containers .tooltip {
+    align-self: flex-start;
+  }
+
+  .CTA-containers .tooltip-text {
+    top: -50%;
+    font-size: 0.9rem;
+  }
+
+  .details-amount span.amount-out,
+  .details-amount span.amount-in,
+  .details-amount span.amount-cb {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+
+  .footer {
+    column-gap: 2rem;
+    padding: 7rem 3rem;
+  }
+
+  .updated-to-premium {
+    background-color: var(--background);
+  }
+  .CTA-tabs-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .CTA-info-tabs {
+    width: 90%;
+    height: 90%;
+  }
+
+  .modal-pricing {
+    width: 60%;
+    height: 80%;
+    gap: 1rem;
+  }
+
+  .starter-plan-card,
+  .premium-plan-card {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .cost {
+    font-size: 1.2rem;
+  }
+
+  span.dollars-cost {
+    font-size: 3rem;
+  }
+
+  .plan-info h3 {
+    font-size: 1.6rem;
+  }
+  .plan-info p {
+    font-size: 1.2rem;
+  }
+  .starter-plan-pros,
+  .premium-plan-pros {
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+    font-weight: 300;
+  }
+
+  .modal-chat h3 {
+    font-size: 2.6rem;
+  }
+
+  .modal-chat {
+    width: 60%;
+  }
+}
+
+/**************************/
+/* BELOW 768  */
+/**************************/
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-bar {
+    padding: 0 1rem;
+
+    gap: 2rem;
+  }
+
+  .welcome {
+    font-size: 2.4rem;
+  }
+
+  .footer-list,
+  .footer-address {
+    font-size: 1rem;
+  }
+
+  .footer h5 {
+    font-size: 1.4rem;
+  }
+
+  .CTA-containers .tooltip-text {
+    font-size: 1rem;
+  }
+
+  .movements {
+    max-height: 90rem;
+  }
+
+  .CTA-containers button {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-top: 0;
+    font-size: 1.4rem;
+    padding: 0;
+  }
+
+  .CTA-text {
+    align-self: center;
+  }
+
+  .modal-pricing {
+    width: 80%;
+    height: 80%;
+  }
+
+  .cost {
+    font-size: 1rem;
+    top: 90px;
+    left: 30px;
+  }
+
+  .modal-updated {
+    padding: 2rem 4rem;
+    width: 80%;
+  }
+
+  .modal-updated h3 {
+    font-size: 2.6rem;
+  }
+
+  .acess-to {
+    padding: 2rem;
+  }
+
+  .modal-chat {
+    width: 80%;
+    padding: 3rem;
+  }
+
+  .chat-message p {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px  */
+/**************************/
+
+@media (max-width: 34em) {
+  .container {
+    margin: 4rem 2rem 15rem 2rem;
+  }
+
+  .nav-bar {
+    gap: 1rem;
+  }
+
+  .CTA-containers h3 {
+    font-size: 1.2rem;
+  }
+
+  .CTA-info-tabs::placeholder {
+    letter-spacing: 0;
+    font-size: 0.9rem;
+  }
+
+  p.updated-to-premium {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .movements-type {
+    font-size: 1rem;
+    width: 8.6rem;
+    padding: 0 0.4rem;
+  }
+  .movements-row {
+    padding: 2rem 1rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  .footer-logo {
+    grid-row: 2;
+  }
+
+  .footer-address {
+    grid-row: 2;
+  }
+
+  .cost {
+    font-size: 1rem;
+    top: 65px;
+    left: 15px;
+  }
+
+  .starter-plan-pros,
+  .premium-plan-pros {
+    font-size: 0.1rem;
+    padding: 2rem 0.1rem;
+    height: 25rem;
+  }
+  .modal-chat h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
